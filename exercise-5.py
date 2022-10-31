@@ -12,3 +12,15 @@
 #      etc.
 
 # Hint: The next number is found by adding the two numbers before it
+
+count = 0
+arr = []
+
+while count < 50:
+  if count == 1 or count == 0:
+    arr.append(count)
+  else:
+    arr.append(arr[count - 1] + arr[count - 2])
+
+  print(f'term: {count} / number: {arr[count]}')
+  count += 1
